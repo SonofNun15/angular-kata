@@ -5,8 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start",
-    "build": "tsc",
-    "build.watch": "tsc -w"
+    "build": "tsc & gulp copy-assets",
+    "build.watch": "concurrently \"tsc -w\" \"gulp watch-assets\"",
+    "bundle": "webpack",
+    "bundle.watch": "webpack -w",
+    "build-bundle.watch": "concurrently \"npm run build.watch\" \"npm run bundle.watch\""
   },
   "repository": {
     "type": "git",
@@ -25,6 +28,7 @@
     "angular": "^1.5.3"
   },
   "devDependencies": {
+    "concurrently": "^2.0.0",
     "gulp": "^3.9.1",
     "text-loader": "0.0.1",
     "typescript": "^1.8.9",
