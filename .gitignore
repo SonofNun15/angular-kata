@@ -1,2 +1,11 @@
 # NPM dependencies
 /node_modules/
+
+# Built files
+/built/
+
+# External typings
+/typings/main.d.ts
+/typings/main/
+/typings/browser.d.ts
+/typings/browser
