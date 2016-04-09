@@ -30,6 +30,7 @@
   },
   "devDependencies": {
     "concurrently": "^2.0.0",
+    "del": "^2.2.0",
     "gulp": "^3.9.1",
     "text-loader": "0.0.1",
     "typescript": "^1.8.9",

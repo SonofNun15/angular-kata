@@ -1,4 +1,5 @@
 const gulp = require('gulp')
+const del = require('del')
 
 const sourceFolder = 'source'
 const destFolder = 'built'
@@ -25,3 +26,7 @@ gulp.task(copyAssetsTask, () => {
 function makeAssetPaths() {
 	return assetTypes.map(x => './' + sourceFolder + '/**/' + x)
 }
+
+gulp.task('clean', () => {
+	return del(destFolder)
+})
