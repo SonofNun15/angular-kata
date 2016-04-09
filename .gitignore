@@ -4,9 +4,6 @@
 # Built files
 /built/
 
-# Bundled files
-/output/
-
 # External typings
 /typings/main.d.ts
 /typings/main/
