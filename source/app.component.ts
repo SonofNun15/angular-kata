@@ -17,4 +17,5 @@ export class AppController {
 export let appComponentOptions: angular.IComponentOptions = {
 	template: require('./app.component.html'),
 	controller: AppController,
+	controllerAs: 'controller',
 }
