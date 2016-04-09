@@ -12,4 +12,9 @@ module.exports = {
 			},
 		],
 	},
+	externals: [
+		{
+			angular: 'angular',
+		},
+	],
 }
