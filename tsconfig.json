@@ -5,10 +5,12 @@
         "noImplicitAny": false,
         "outDir": "built",
         "rootDir": "./source",
-		"moduleResolution": "node",
+        "moduleResolution": "node",
         "sourceMap": true
     },
     "exclude": [
-        "node_modules"
+        "node_modules",
+        "typings/main",
+        "typings/main.d.ts"
     ]
 }
