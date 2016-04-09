@@ -5,7 +5,7 @@ export let componentName: string = 'jgCheckoutApp'
 export class AppController {
 	value: number
 
-	$ngInit() {
+	$onInit() {
 		this.value = 5
 	}
 

@@ -34,7 +34,7 @@ describe('AppController', () => {
 
 	function buildController() {
 		let controller = $controller(AppController)
-		controller.$ngInit()
+		controller.$onInit()
 		return controller
 	}
 })
