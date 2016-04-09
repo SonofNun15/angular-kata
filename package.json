@@ -5,12 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start",
-    "build": "gulp clean && tsc & gulp copy-assets",
+
+	"build": "gulp clean && tsc & gulp copy-assets",
     "build.watch": "gulp clean && gulp copy-assets && concurrently \"tsc -w\" \"gulp watch-assets\"",
-    "bundle": "webpack",
+
+	"bundle": "webpack",
     "bundle.watch": "webpack -w",
     "build-bundle": "npm run build && npm run bundle",
-    "build-bundle.watch": "concurrently \"npm run build.watch\" \"npm run bundle.watch\""
+    "build-bundle.watch": "concurrently \"npm run build.watch\" \"npm run bundle.watch\"",
+
+    "bundle.prod": "webpack --config webpack.prod.config.js",
+    "build-bundle.prod": "npm run build && npm run bundle.prod"
   },
   "repository": {
     "type": "git",

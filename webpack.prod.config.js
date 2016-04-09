@@ -1,3 +1,5 @@
+var webpack = require('webpack')
+
 module.exports = {
 	entry: './built/app.module.js',
 	output: {
@@ -17,5 +19,7 @@ module.exports = {
 			angular: 'angular',
 		},
 	],
-	devtool: 'sourcemap',
+	plugins: [
+		new webpack.optimize.UglifyJsPlugin(),
+	],
 }
