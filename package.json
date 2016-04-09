@@ -25,6 +25,7 @@
     "angular": "^1.5.3"
   },
   "devDependencies": {
+    "text-loader": "0.0.1",
     "typescript": "^1.8.9",
     "typings": "^0.7.12",
     "webpack": "^1.12.14"
