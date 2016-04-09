@@ -2,6 +2,19 @@ import * as angular from 'angular'
 
 export let componentName: string = 'jgCheckoutApp'
 
+export class AppController {
+	value: number
+
+	$ngInit() {
+		this.value = 5
+	}
+
+	add() {
+		this.value += 5
+	}
+}
+
 export let appComponentOptions: angular.IComponentOptions = {
-	template: require('./app.component.html')
+	template: require('./app.component.html'),
+	controller: AppController,
 }
