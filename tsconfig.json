@@ -5,6 +5,7 @@
         "noImplicitAny": false,
         "outDir": "built",
         "rootDir": "./source",
+		"moduleResolution": "node",
         "sourceMap": true
     },
     "exclude": [
