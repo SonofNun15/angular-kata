@@ -9,6 +9,7 @@
     "build.watch": "concurrently \"tsc -w\" \"gulp watch-assets\"",
     "bundle": "webpack",
     "bundle.watch": "webpack -w",
+	"build-bundle": "npm run build && npm run bundle",
     "build-bundle.watch": "concurrently \"npm run build.watch\" \"npm run bundle.watch\""
   },
   "repository": {
