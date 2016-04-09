@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start",
-    "build": "tsc & gulp copy-assets",
-    "build.watch": "concurrently \"tsc -w\" \"gulp watch-assets\"",
+    "build": "gulp clean && tsc & gulp copy-assets",
+    "build.watch": "gulp clean && gulp copy-assets && concurrently \"tsc -w\" \"gulp watch-assets\"",
     "bundle": "webpack",
     "bundle.watch": "webpack -w",
-	"build-bundle": "npm run build && npm run bundle",
+    "build-bundle": "npm run build && npm run bundle",
     "build-bundle.watch": "concurrently \"npm run build.watch\" \"npm run bundle.watch\""
   },
   "repository": {
