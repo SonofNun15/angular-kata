@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "npm run build && karma start karma.config.js",
+    "test.debug": "npm run build.watch && karma start karma.debug.config.js",
     "build": "gulp clean && tsc & gulp copy-assets",
     "build.watch": "gulp clean && gulp copy-assets && concurrently \"tsc -w\" \"gulp watch-assets\"",
     "bundle": "webpack",
