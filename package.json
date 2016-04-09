@@ -18,5 +18,12 @@
   "bugs": {
     "url": "https://github.com/SonofNun15/angular-kata/issues"
   },
-  "homepage": "https://github.com/SonofNun15/angular-kata#readme"
+  "homepage": "https://github.com/SonofNun15/angular-kata#readme",
+  "dependencies": {
+    "angular": "^1.5.3"
+  },
+  "devDependencies": {
+    "typescript": "^1.8.9",
+    "webpack": "^1.12.14"
+  }
 }
